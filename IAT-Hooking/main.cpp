@@ -70,7 +70,7 @@ int FakeFunc(HWND hwnd, LPCTSTR lptext, LPCTSTR lpCaption, UINT uType){
 }
 
 void Actual(){
-  MessageBoxW( NULL, L"Normal", L"Normal", MB_ABORTRETRYIGNORE );
+  MessageBoxA( NULL, L"Normal", L"Normal", MB_ABORTRETRYIGNORE );
 }
 
 int main(){
