@@ -36,12 +36,12 @@ int main() {
 	LARGE_INTEGER	lpSectionSize {sizeof(shellcode)};
 
 	HANDLE       hLocalProcess  {GetCurrentProcess()},
-		           hRemoteProcess {},
-		           hMappedSection {},
-		           hThread        {};
+		     hRemoteProcess {},
+		     hMappedSection {},
+		     hThread        {};
 
 	PVOID        lBuffer        {},
-		           rBuffer        {};
+		     rBuffer        {};
 
 	NT::NTSTATUS STATUS         {};
 
