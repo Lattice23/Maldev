@@ -62,15 +62,14 @@ PULONG_PTR GetTargetFunc( PVOID buffer, std::string Target, PIMAGE_IMPORT_DESCRI
   return nullptr;
 }
 
-int FakeFunc(HWND hwnd, LPCTSTR lptext, LPCTSTR lpCaption, UINT uType){
+void FakeFunc(){
   
   std::cout << "HOOK BEEP :)\n";
   Beep(700,6000);
-  return 0;
 }
 
 void Actual(){
-  MessageBoxA( NULL, L"Normal", L"Normal", MB_ABORTRETRYIGNORE );
+  MessageBoxA( NULL, "Normal", "Normal", MB_ABORTRETRYIGNORE );
 }
 
 int main(){
